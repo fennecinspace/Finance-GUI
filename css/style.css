@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+/**** NAVBAR ****/
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: red;
+}
+
+/**** MENUES ****/
+
+#leftmenu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: #123456;
+}
+
+#rightmenu {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    width: 60px;
+    height: 100%;
+    background: #123456;
+}
+
+
+/**** MAIN ****/
+
+#sitecontainer {
+    padding: 70px 60px 0px 150px;
+    color: white;
+    width : 100%;
+    height: 100%;
+    background: black;
+    text-align:center;
+}
+
+#content {
+    background:white;
+    height: 100%;
+    min-height: 586px;
+}
+
+/**** SECTIONS ****/
+
+#upper {
+    height: 78%;
+    background: grey;
+}
+
+#lower {
+    height: 22%;
+    background: yellowgreen;
+}
+
+.col-1 {
+    width: 33.333%;
+    height: 100%;
+    background: #146987;
+    float: left;
+}
+
+.col-2 {
+    width: 66.6666%;
+    height: 100%;
+    background: #168987;
+    float: left;
+}
+
