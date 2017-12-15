@@ -10,17 +10,21 @@
 <body>
     <div class="wrapper">
         <!--upper part of site-->
-        <nav id="topbar">
-            
+        <nav id="topbar" class="clearfix">
+            <div id="logo" class="topBarItem first">Exchange Market</div>
+            <div id="user" class="topBarItem floatRight">User</div>
+            <div id="notify" class="topBarItem floatRight">Notifications</div>
         </nav>
 
         <!--left menu contains the different sections of the app-->
         <div id="leftmenu">
-            <div><a href="#">Home</a></div>
-            <div><a href="#">Profile</a></div>
-            <div><a href="#">Portfolio</a></div>
-            <div><a href="#">News</a></div>
-            <div><a href="#">Contact</a></div>
+            <div>
+                <div class="leftMenuItem"><a href="#">Home</a></div>
+                <div class="leftMenuItem"><a href="#">Portfolio</a></div>
+                <div class="leftMenuItem"><a href="#">News</a></div>
+                <div class="leftMenuItem"><a href="#">Settings</a></div>
+                <div class="leftMenuItem"><a href="#">Logout</a></div>
+            </div>
         </div>
         <!--middle and lower part of site-->
         <div id ="sitecontainer" class ="fluid-element">
@@ -40,7 +44,9 @@
         </div>
 
         <div id="rightmenu">
-            
+            <div>
+                <!-- Currencies Go Here -->
+            </div> 
         </div>
     </div>
 </body>
