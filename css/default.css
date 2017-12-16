@@ -41,12 +41,10 @@ html,body {
 
 a, a:active, a:hover, a:visited {
     text-decoration: none;
+    color: black;
 }
 
 .floatRight {
     float: Right;
 }
 
-.first {
-    margin-left: 0px;
-}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Terminal</title>
 </head>
@@ -11,21 +12,22 @@
     <div class="wrapper">
         <!--upper part of site-->
         <nav id="topbar" class="clearfix">
-            <div id="logo" class="topBarItem first">Exchange Market</div>
-            <div id="user" class="topBarItem floatRight">User</div>
-            <div id="notify" class="topBarItem floatRight">Notifications</div>
+            <div id="logo" class="topBarItem">Exchange Market</div>
+            <div id="user" class="topBarItem floatRight"></div>
+            <div id="notify" class="topBarItem floatRight notifyOff"></div>
         </nav>
 
         <!--left menu contains the different sections of the app-->
         <div id="leftmenu">
             <div>
-                <div class="leftMenuItem"><a href="#">Home</a></div>
-                <div class="leftMenuItem"><a href="#">Portfolio</a></div>
-                <div class="leftMenuItem"><a href="#">News</a></div>
-                <div class="leftMenuItem"><a href="#">Settings</a></div>
-                <div class="leftMenuItem"><a href="#">Logout</a></div>
+                <a class="leftMenuItem homeOn" href="#">Home</a>
+                <a class="leftMenuItem profileOff" href="#">Portfolio</a>
+                <a class="leftMenuItem newsOff" href="#">News</a>
+                <a class="leftMenuItem settingsOff" href="#">Settings</a>
+                <a class="leftMenuItem logoutOff" href="#">Logout</a>
             </div>
         </div>
+
         <!--middle and lower part of site-->
         <div id ="sitecontainer" class ="fluid-element">
             <div id="content">

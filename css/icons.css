@@ -1,0 +1,53 @@
+/* HOME */
+.homeOff {
+    background: url("../images/icons/homeOff.png") no-repeat;
+}
+
+.homeOn {
+    background: url("../images/icons/homeOn.png") no-repeat;
+}
+
+/* PORTFOLIO */
+.profileOff {
+    background: url("../images/icons/profileOff.png") no-repeat;
+}
+
+.profileOn {
+    background: url("../images/icons/profileOn.png") no-repeat;
+}
+
+/* LOG OUT */
+.logoutOff {
+    background: url("../images/icons/logoutOff.png") no-repeat;
+}
+
+.logoutOn {
+    background: url("../images/icons/logoutOn.png") no-repeat;
+}
+
+/* NEWS */
+.newsOff {
+    background: url("../images/icons/newsOff.png") no-repeat;
+}
+
+.newsOn {
+    background: url("../images/icons/newsOn.png") no-repeat;
+}
+
+/* SETTINGS */
+.settingsOff {
+    background: url("../images/icons/settingsOff.png") no-repeat;
+}
+
+.settingsOn {
+    background: url("../images/icons/settingsOn.png") no-repeat;
+}
+
+/* NOTIFICATIONS*/
+.notifyOff {
+    background: url("../images/icons/alarmOff.png") no-repeat;
+}
+
+.notifyOn {
+    background: url("../images/icons/alarmOn.png") no-repeat;
+}

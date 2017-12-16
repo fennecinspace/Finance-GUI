@@ -17,9 +17,25 @@
 .topBarItem {
     display: inline-block;
     margin: 0 10px;
-    height: 100%;
-    text-align: center;
     line-height: 70px;
+}
+
+#user {
+    background: url("../images/profilePic.png") no-repeat;
+    background-size: 50px;
+    width : 50px;
+    height: 50px;
+    border: 1px solid rgba(104, 104, 104, 0.925);
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+#notify {
+    width: 50px;
+    height : 70px;
+    background-size: 25px;
+    background-position: center; 
+    text-align: center;
 }
 
 /**** MENUS ****/
@@ -55,8 +71,16 @@
 /**** MENU ITEMS ****/
 
 .leftMenuItem {
+    display: block;
     height: 50px;
-    background: black;
+    padding-left: 50px;
+    line-height: 50px;
+    background-size: 25px;
+    background-position: 10px 11px;
+}
+
+.leftMenuItem:hover {
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 #leftmenu > div > .leftMenuItem:last-child { /* this is for the logout Button */
@@ -106,3 +130,12 @@
     float: left;
 }
 
+
+/* ADDED */
+.first {
+    margin-left: 0px;
+}
+
+.last {
+    margin-right: 0px;
+}
