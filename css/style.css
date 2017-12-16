@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 
 /**** NAVBAR ****/
 #topbar {
@@ -31,11 +32,67 @@
 }
 
 #notify {
-    width: 50px;
-    height : 70px;
+    width: 30px;
+    height : 30px;
     background-size: 25px;
     background-position: center; 
     text-align: center;
+    margin: 20px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+nav > div:last-child { /* will use js here to show and hide the notification area*/
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 65px;
+    z-index: 4;
+    width: 200px;
+    height: 270px;
+    background: white;
+    box-shadow: rgba(17, 17, 17, 0.178)  0px 0px 5px 2px;
+}
+
+
+#search {
+    border: 1px solid rgba(104, 104, 104, 0.925);
+    line-height: 0px;
+    border-radius: 5px;
+    margin: 18px 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    overflow: hidden;
+}
+
+#searchbtn {
+    width: 40px;
+    height: 32px;
+    background: url("../images/icons/searchBtn.png") no-repeat;
+    background-size: 25px;
+    background-position: center;
+    border: none;
+    border-left: 1px solid rgba(104, 104, 104, 0.925);
+}
+
+#searchbtn:hover {
+    background-color: rgba(104, 104, 104, 0.2);
+    cursor: pointer;
+}
+
+#searchtxt {
+    width: 400px;
+    height: 32px;
+    border: none;
+}
+
+#logo {
+    width: 150px;
+    height: 70px;
+    background: url("../images/logo.png") no-repeat;
+    background-position: center;
+    background-size: 150px;
 }
 
 /**** MENUS ****/
@@ -75,6 +132,7 @@
     height: 50px;
     padding-left: 50px;
     line-height: 50px;
+    font-weight: 700;
     background-size: 25px;
     background-position: 10px 11px;
 }

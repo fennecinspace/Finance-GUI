@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <title>Terminal</title>
 </head>
 <body>
     <div class="wrapper">
         <!--upper part of site-->
         <nav id="topbar" class="clearfix">
-            <div id="logo" class="topBarItem">Exchange Market</div>
+            <div id="logo" class="topBarItem"></div>
+            <div id="search" class="topBarItem">
+                <input id="searchtxt" type="text" placeholder="Search"><input id="searchbtn" type="submit" value="">
+            </div>
             <div id="user" class="topBarItem floatRight"></div>
-            <div id="notify" class="topBarItem floatRight notifyOff"></div>
+            <input id="notify" class="topBarItem floatRight notifyOff" type="submit" value="">
+            <div class="hidden"></div> <!-- this is the notification window -->
         </nav>
 
         <!--left menu contains the different sections of the app-->

@@ -1,0 +1,11 @@
+@media only all  and (max-width: 793px) {
+    #search {
+        display: none;
+    }
+}
+
+@media only all  and (max-width: 317px) {
+    #notify {
+        display: none;
+    }
+}
