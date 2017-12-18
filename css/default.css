@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     font-size: 1em;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -45,5 +47,18 @@ a, a:active, a:hover, a:visited {
 }
 
 .floatRight {
-    float: Right;
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.spacefiller{
+    width: 60px;
+    height: 60px;
 }

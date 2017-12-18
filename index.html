@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="FINANCE Terminal is a small Finance Web Up for IHM MODULE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,13 +16,13 @@
     <div class="wrapper">
         <!--upper part of site-->
         <nav id="topbar" class="clearfix">
-            <div id="logo" class="topBarItem"></div>
-            <div id="search" class="topBarItem">
-                <input id="searchtxt" type="text" placeholder="Search"><input id="searchbtn" type="submit" value="">
+            <div id="logo" class="floatLeft"></div>
+            <div id="search" class="floatLeft">
+                <input id="searchtxt" type="text" placeholder="Search"><div id="searchbtn" class="floatRight"></div>
             </div>
-            <div id="user" class="topBarItem floatRight"></div>
-            <input id="notify" class="topBarItem floatRight notifyOff" type="submit" value="">
-            <div class="hidden"></div> <!-- this is the notification window -->
+            <div id="user" class="floatRight"></div>
+            <input id="notify" class="floatRight notifyOff" type="submit" value="">
+            <div class="hide"></div> <!-- this is the notification window -->
         </nav>
 
         <!--left menu contains the different sections of the app-->
@@ -28,6 +31,7 @@
                 <a class="leftMenuItem homeOn" href="#">Home</a>
                 <a class="leftMenuItem profileOff" href="#">Portfolio</a>
                 <a class="leftMenuItem newsOff" href="#">News</a>
+                <a class="leftMenuItem walletOff" href="#">Wallet</a>
                 <a class="leftMenuItem settingsOff" href="#">Settings</a>
                 <a class="leftMenuItem logoutOff" href="#">Logout</a>
             </div>
@@ -48,13 +52,22 @@
                         <!-- stats go here -->
                 </div>
             </div>
-        </div>
 
-        <div id="rightmenu">
-            <div>
-                <!-- Currencies Go Here -->
-            </div> 
-        </div>
-    </div>
+            <div id="rightmenu">
+                    <div id="dollar" class="currency"></div>
+                    <div id="euro" class="currency"></div>
+                    <div id="pound" class="currency"></div>
+                    <div id="yen" class="currency"></div>
+                    <div id="won" class="currency"></div>
+                    <div id="franc" class="currency"></div>
+                    <div id="krona" class="currency"></div>
+                    <div id="lira" class="currency"></div>
+                    <div id="rupee" class="currency"></div>
+                    <div id="ruble" class="currency"></div>
+                    <div id="shekel" class="currency"></div>
+                    <div class="spacefiller"></div>
+            </div>
+        </div> <!-- #sitecontainer -->
+    </div> <!-- .wrapper -->
 </body>
 </html>

@@ -34,6 +34,15 @@
     background: url("../images/icons/newsOn.png") no-repeat;
 }
 
+/* WALLET*/
+.walletOff {
+    background: url("../images/icons/walletOff.png") no-repeat;
+}
+
+.walletOn {
+    background: url("../images/icons/walletOn.png") no-repeat;
+}
+
 /* SETTINGS */
 .settingsOff {
     background: url("../images/icons/settingsOff.png") no-repeat;
@@ -51,3 +60,18 @@
 .notifyOn {
     background: url("../images/icons/alarmOn.png") no-repeat;
 }
+
+
+/**** CURRENCIES ****/
+
+#dollar { background-image: url("../images/currencies/dollar.png") }
+#euro { background-image: url("../images/currencies/euro.png") }
+#pound { background-image: url("../images/currencies/pound.png") }
+#yen { background-image: url("../images/currencies/yen.png") }
+#won { background-image: url("../images/currencies/won.png") }
+#franc { background-image: url("../images/currencies/franc.png") }
+#krona { background-image: url("../images/currencies/krona.png") }
+#lira { background-image: url("../images/currencies/lira.png") }
+#rupee { background-image: url("../images/currencies/rupee.png") }
+#ruble { background-image: url("../images/currencies/ruble.png") }
+#shekel { background-image: url("../images/currencies/shekel.png") }
