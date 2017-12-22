@@ -59,7 +59,11 @@ a, a:active, a:hover, a:visited {
     display: none;
 }
 
-.spacefiller{
+.spacefiller {
     width: 60px;
     height: 60px;
+}
+
+.activeElement {
+    background-color: hsla(0, 0%, 53.3%, .2);
 }

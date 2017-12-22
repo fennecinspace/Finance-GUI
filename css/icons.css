@@ -5,6 +5,7 @@
 
 .homeOn {
     background: url("../images/icons/homeOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* PORTFOLIO */
@@ -14,6 +15,7 @@
 
 .profileOn {
     background: url("../images/icons/profileOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* LOG OUT */
@@ -23,6 +25,7 @@
 
 .logoutOn {
     background: url("../images/icons/logoutOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* NEWS */
@@ -32,6 +35,7 @@
 
 .newsOn {
     background: url("../images/icons/newsOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* WALLET*/
@@ -41,6 +45,7 @@
 
 .walletOn {
     background: url("../images/icons/walletOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* SETTINGS */
@@ -50,6 +55,7 @@
 
 .settingsOn {
     background: url("../images/icons/settingsOn.png") no-repeat;
+    background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /* NOTIFICATIONS*/

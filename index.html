@@ -5,6 +5,7 @@
     <meta name="description" content="FINANCE Terminal is a small Finance Web Up for IHM MODULE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/icons.css">
@@ -22,54 +23,33 @@
             </div>
             <div id="user" class="floatRight"></div>
             <input id="notify" class="floatRight notifyOff" type="submit" value="">
-            <div id ="notifyBox" class="hide"></div> <!-- this is the notification window -->
+            <div id ="notifyBox" class="hide">
+                <div>
+                    <div></div><div></div><div></div>
+                </div>
+            </div> <!-- this is the notification window -->
         </nav>
-
+        
         <!--left menu contains the different sections of the app-->
         <div id="leftmenu">
             <div>
-                <a class="leftMenuItem homeOn" href="#">Home</a>
-                <a class="leftMenuItem profileOff" href="#">Portfolio</a>
-                <a class="leftMenuItem newsOff" href="#">News</a>
-                <a class="leftMenuItem walletOff" href="#">Wallet</a>
-                <a class="leftMenuItem settingsOff" href="#">Settings</a>
-                <a class="leftMenuItem logoutOff" href="#">Logout</a>
+                <a class="leftMenuItem homeOn">Home</a>
+                <a class="leftMenuItem profileOff">Portfolio</a>
+                <a class="leftMenuItem newsOff">News</a>
+                <a class="leftMenuItem walletOff">Wallet</a>
+                <a class="leftMenuItem settingsOff">Settings</a>
+                <a class="leftMenuItem logoutOff">Logout</a>
             </div>
         </div>
 
         <!--middle and lower part of site-->
         <div id ="sitecontainer" class ="fluid-element">
-            <div id="content">
-                <div id="upper">
-                    <section class="col-2">
-                        <!-- graphs go here -->
-                    </section>
-                    <section class="col-1">
-                        <!-- right side of graphs go here -->
-                    </section>
-                </div>
-                <div id="lower">
-                        <!-- stats go here -->
-                </div>
-            </div>
 
-            <div id="rightmenu">
-                    <div id="dollar" class="currency"></div>
-                    <div id="euro" class="currency"></div>
-                    <div id="pound" class="currency"></div>
-                    <div id="yen" class="currency"></div>
-                    <div id="won" class="currency"></div>
-                    <div id="franc" class="currency"></div>
-                    <div id="krona" class="currency"></div>
-                    <div id="lira" class="currency"></div>
-                    <div id="rupee" class="currency"></div>
-                    <div id="ruble" class="currency"></div>
-                    <div id="shekel" class="currency"></div>
-                    <div class="spacefiller"></div>
-            </div>
-        </div> <!-- #sitecontainer -->
+        </div>
     </div> <!-- .wrapper -->
     <!-- SCRIPTS -->
-    <script src="js/Handler.js" type="text/javascript"></script>
+    <script src="js/default.js" type="text/javascript"></script>
+    <script src="js/notify.js" type="text/javascript"></script>
+    <script src="js/pagesHandler.js" type="text/javascript"></script>
 </body>
 </html>

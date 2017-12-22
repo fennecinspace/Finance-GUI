@@ -1,5 +1,5 @@
 // function defs
-function notificationHandler(){
+function NotificationHandler(){
     var button = document.getElementById("notify")
     var notifyArea = document.getElementById("notifyBox")
 
@@ -18,6 +18,6 @@ function notificationHandler(){
     })
 }
 
-
 // function callings
-notificationHandler()
+
+NotificationHandler()

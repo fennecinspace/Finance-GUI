@@ -38,7 +38,7 @@
 }
 
 
-nav > div:last-child {
+#notifyBox {
     position: fixed;
     top: 60px;
     right: 65px;
@@ -49,6 +49,21 @@ nav > div:last-child {
     box-shadow: rgba(17, 17, 17, 0.178)  0px 0px 5px 2px;
 }
 
+#notifyBox > div { /* container des notification*/
+    margin: 20px 0px;
+}
+
+#notifyBox > div > div { /* les notifications*/
+    width : 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#notifyBox > div div:hover {
+    background-color: hsla(0, 0%, 53.3%, .2);
+    cursor: pointer;
+}
 
 #search {
     border: 1px solid rgba(104, 104, 104, 0.925);
@@ -102,7 +117,7 @@ nav > div:last-child {
     z-index: 2;
 }
 
-#leftmenu > div{
+#leftmenu > div , #rightmenu > div {
     padding-top: 10px;
     position: relative;
     height: 100%;
@@ -116,9 +131,16 @@ nav > div:last-child {
     height: 100%;
     background-color: rgb(245, 245, 245);
     box-shadow: rgba(17, 17, 17, 0.1) -3px 0px 10px 1px;
-
     z-index: 2;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
 
 /**** MENU ITEMS ****/
 
@@ -130,6 +152,7 @@ nav > div:last-child {
     font-weight: 700;
     background-size: 25px;
     background-position: 10px 11px;
+    cursor: pointer;
 }
 
 #leftmenu > div > .leftMenuItem:last-child { /* this is for the logout Button */
@@ -139,7 +162,6 @@ nav > div:last-child {
 }
 
 .currency {
-    background-color: rgb(245, 245, 245);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -149,22 +171,21 @@ nav > div:last-child {
     cursor: pointer;
 }
 
-.leftMenuItem:hover, .currency:hover, .activeElement {
+.leftMenuItem:hover, .currency:hover {
     background-color: hsla(0, 0%, 53.3%, .2);
 }
 
 /**** MAIN CONTENT ****/
 
 #sitecontainer {
-    padding: 70px 60px 0px 150px;
-    width : 100%;
-    height: 100%;
+    padding: 70px 0px 0px 150px;
     background: black;
     text-align:center;
 }
 
 #content {
     height: 100%;
+    margin-right: 60px;
     min-height: 586px;
 }
 
@@ -192,7 +213,6 @@ nav > div:last-child {
     background: #c2c2c2;
     float: left;
 }
-
 
 /* ADDED */
 .first {
