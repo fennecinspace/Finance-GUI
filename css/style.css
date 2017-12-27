@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
-
 /**** NAVBAR ****/
+/* #region */
 #topbar {
     position: fixed;
     top: 0;
@@ -12,9 +11,10 @@
     box-shadow: rgba(17, 17, 17, 0.08)  0px 3px 10px 1px;
     z-index: 3;
 }
+/* #endregion */
 
 /**** NAVBAR ITEMS ****/
-
+/* #region */
 #user {
     background: url("../images/profilePic.png") no-repeat;
     background-size: 50px;
@@ -103,9 +103,10 @@
     background-position: center;
     background-size: 150px;
 }
+/* #endregion */
 
-/**** MENUS ****/
-
+/**** MENUS LEFT/RIGHT ****/
+/* #region */
 #leftmenu {
     position: fixed;
     top: 70px;
@@ -133,9 +134,10 @@
     box-shadow: rgba(17, 17, 17, 0.1) -3px 0px 10px 1px;
     z-index: 2;
 }
+/* #endregion */
 
-/**** MENU ITEMS ****/
-
+/**** LEFT/RIGHT MENU ITEMS ****/
+/* #region */
 .leftMenuItem {
     display: block;
     height: 50px;
@@ -166,17 +168,18 @@
 .leftMenuItem:hover, .currency:hover {
     background-color: hsla(0, 0%, 53.3%, .2);
 }
+/* #endregion */
 
-
-/**** MAIN CONTENT ****/
-
+/**** MAIN CONTENT STYLE ****/
+/* #region */
 #sitecontainer {
     padding: 70px 0px 0px 150px;
     text-align:center;
 }
+/* #endregion */
 
 /**** CONTENT CONTAINERS ****/
-
+/* #region */
 #homeContent {
     height: 100%;
     margin-right: 60px;
@@ -191,26 +194,160 @@
     margin: 0 auto;
 }
 
-#logoutSection {
+#newsContent {
+    width : 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding-top: 10px; 
+}
+/* #endregion */
+
+/***** NEWS *****/
+/* #region */
+.newsCard {
+    position: relative;
     width : 300px;
-    height : 180px;
-    padding-top: 90px; 
-    margin: 0px auto;
+    height: 400px;
+    margin: 10px 20px;
+    float: left;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+}
+.newsCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.3)  0px 0px 5px 2px;
+}
+
+.cardThumb {
+    height: 235px;
+    background-color: #000; 
+    overflow : hidden;
+    transition: height 0.3s;
+}
+
+.newsCard:hover .cardThumb{
+    height: 100px;
+}
+
+.cardThumb img {
+    display : block;
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+}
+
+.newsCard:hover .cardThumb img {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.cardDate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background-color : rgb(255, 0, 0);
+    border-radius : 50%;
+    color: #fff;
     text-align: center;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.178)  0px 0px 5px 2px;
+    line-height: 13px;
     font-weight: bold;
-    background: url("../images/byebye.png") no-repeat;
-    background-size: 50px;
-    background-position: 120px 20px; 
+    padding-top: 8px;
 }
 
-#logoutPage {
-    padding-top: 50px;
+.cardDate_day, .cardDate_month{
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
 }
 
-/***** SETTINGS *****/
+.cardDate_month {
+    font-size: 12px;
+}
 
+.cardBody {
+    position: relative;
+    padding: 20px;
+}
+
+.cardCategory {
+    position: absolute;
+    height: 25px;
+    padding: 0px 15px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    top: -25px;
+    left: 0px;
+}
+
+.cardTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    padding: 0 0 10px 0;
+}
+
+.cardSubtitle {
+    color: rgb(255, 0, 0);
+    padding: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.cardDescription {
+    color : #666C74;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.newsCard:hover .cardDescription {
+    opacity: 1;
+}
+
+.cardFooter {
+    position : absolute;
+    bottom : 12px;
+    left: 20px;
+    right : 20px;
+    font-size: 12px;
+    color: rgb(131, 131, 131); 
+}
+
+.cardIcon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.cardIconTime {
+    background: url("../images/icons/timeIcon.png") no-repeat;
+    background-size: 14px;
+    width: 14px;
+    height: 14px;
+    margin-top: -2px;
+}
+
+.cardIconComment {
+    background: url("../images/icons/commentIcon.png") no-repeat;
+    background-size: 14px;
+    width: 14px;
+    height: 14px;
+    margin: -2px 3px 0 10px;
+}
+/* #endregion */
+
+ /***** SETTINGS *****/
+/* #region */
 #settingsContent > .col-1 {
     max-width: 130px;
     min-width: 130px;
@@ -259,9 +396,31 @@
     background: rgba(104, 104, 104, 0.671);
     cursor: pointer;
 }
+/* #endregion */
 
-/**** Page Layout ****/
+/**** LOUGOUT ****/
+/* #region */ 
+#logoutSection {
+    width : 300px;
+    height : 180px;
+    padding-top: 90px; 
+    margin: 0px auto;
+    text-align: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.178)  0px 0px 5px 2px;
+    font-weight: bold;
+    background: url("../images/byebye.png") no-repeat;
+    background-size: 50px;
+    background-position: 120px 20px; 
+}
 
+#logoutPage {
+    padding-top: 50px;
+}
+/* #endregion */
+
+/**** PAGE LAYOUT ****/
+/* #region */
 .upper {
     height: 78%;
 }
@@ -293,3 +452,4 @@
 .last {
     margin-right: 0px;
 }
+/* #endregion */
