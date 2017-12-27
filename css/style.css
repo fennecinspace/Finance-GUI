@@ -134,14 +134,6 @@
     z-index: 2;
 }
 
-::-webkit-scrollbar {
-    display: none;
-  }
-  
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-
 /**** MENU ITEMS ****/
 
 .leftMenuItem {
@@ -175,42 +167,121 @@
     background-color: hsla(0, 0%, 53.3%, .2);
 }
 
+
 /**** MAIN CONTENT ****/
 
 #sitecontainer {
     padding: 70px 0px 0px 150px;
-    background: black;
     text-align:center;
 }
 
-#content {
+/**** CONTENT CONTAINERS ****/
+
+#homeContent {
     height: 100%;
     margin-right: 60px;
     min-height: 586px;
 }
 
-/**** MAIN CONTENT SECTIONS ****/
+#settingsContent{
+    min-width: 500px;
+    max-width: 500px;
+    padding: 10px 50px;
+    height: 100%;
+    margin: 0 auto;
+}
 
-#upper {
+#logoutSection {
+    width : 300px;
+    height : 180px;
+    padding-top: 90px; 
+    margin: 0px auto;
+    text-align: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.178)  0px 0px 5px 2px;
+    font-weight: bold;
+    background: url("../images/byebye.png") no-repeat;
+    background-size: 50px;
+    background-position: 120px 20px; 
+}
+
+#logoutPage {
+    padding-top: 50px;
+}
+
+/***** SETTINGS *****/
+
+#settingsContent > .col-1 {
+    max-width: 130px;
+    min-width: 130px;
+}
+
+.col-2 >  form {
+    padding-left: 15px;
+    border-left: 1px solid rgba(104, 104, 104, 0.925);
+}
+
+#profilePicture{
+    width: 100px;
+    height: 100px;
+    background: url("../images/profilePic.png") no-repeat;
+    background-size: 100px;
+    border: 1px solid rgba(104, 104, 104, 0.925);
+    border-radius: 50%;
+}
+
+.settingsPageItem{
+    display : block;
+    width : 300px;
+    margin : 15px 2px;
+}
+
+.settingsPageInput{
+    float : right;
+    clear : right;
+    width : 150px;
+}
+
+.settingsPageLabel {
+    float : left;
+    clear : left;
+}
+
+#submitButton{
+    clear : both;
+    border-radius: 5px;
+    width : 70px;
+    height: 30px;
+    border : 1px solid rgba(104, 104, 104, 0.925);
+}
+
+#submitButton:hover {
+    background: rgba(104, 104, 104, 0.671);
+    cursor: pointer;
+}
+
+/**** Page Layout ****/
+
+.upper {
     height: 78%;
 }
 
-#lower {
+.lower {
     height: 22%;
-    background: rgb(112, 114, 108);
+    /*background: rgb(112, 114, 108);*/
 }
 
 .col-1 {
     width: 33.333%;
     height: 100%;
-    background: rgb(236, 218, 218);
+    /*background: rgb(236, 218, 218);*/
     float: left;
 }
 
 .col-2 {
     width: 66.6666%;
     height: 100%;
-    background: #c2c2c2;
+    /*background: #c2c2c2;*/
     float: left;
 }
 
