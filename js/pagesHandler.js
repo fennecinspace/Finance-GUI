@@ -83,7 +83,6 @@ function LogoutButton() {
     leftMenuItems[5].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[5].classList.add("logoutOn")
-        //add a logout OPTION LATER
         LeftMenuResetter(5)
     })
 }

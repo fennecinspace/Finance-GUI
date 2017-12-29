@@ -16,6 +16,15 @@ function CurrencyLoader(){
             })
 }
 
-CurrencyLoader();
+CurrencyLoader()
 
-
+() => { // this will fix clicking the currencies not closing the nortification box
+    $(".currency").on("click" , e => {
+        e.stopPropagation()
+        if (!$("#notifyBox")[0].classList.contains("hide")) {
+            $("#notify")[0].classList.add("notifyOff")
+            $("#notify")[0].classList.remove("notifyOn")
+            $("#notifyBox")[0].classList.add("hide")
+        }
+    })
+}() // function is defined and called 
