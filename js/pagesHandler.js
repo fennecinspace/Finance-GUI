@@ -3,6 +3,10 @@ var leftMenuItems = document.querySelectorAll(".leftMenuItem")
 
 function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE
     window.addEventListener("load",function (){
+        $("#sitecontainer").load("pages/settings.html").hide()
+        $("#sitecontainer").load("pages/wallet.html").hide()
+        $("#sitecontainer").load("pages/news.html").hide()
+        $("#sitecontainer").load("pages/portfolio.html").hide()
         $("#sitecontainer").load("pages/home.html")
     },false)
 }
@@ -38,7 +42,7 @@ function HomeButton() {
     leftMenuItems[0].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[0].classList.add("homeOn")
-        $("#sitecontainer").load("pages/home.html").hide().fadeIn(400);;
+        $("#sitecontainer").load("pages/home.html").hide().fadeIn(400);
         LeftMenuResetter(0)
     })
 }
@@ -47,7 +51,7 @@ function PortfolioButton() {
     leftMenuItems[1].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[1].classList.add("profileOn")
-        $("#sitecontainer").load("pages/portfolio.html").hide().fadeIn(400);;
+        $("#sitecontainer").load("pages/portfolio.html").hide().fadeIn(400);
         LeftMenuResetter(1)
     })
 }
@@ -56,7 +60,7 @@ function NewsButton() {
     leftMenuItems[2].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[2].classList.add("newsOn")
-        $("#sitecontainer").load("pages/news.html").hide().fadeIn(400);;
+        $("#sitecontainer").load("pages/news.html").hide().fadeIn(400);
         LeftMenuResetter(2)
     })
 }
@@ -65,7 +69,7 @@ function WalletButton() {
     leftMenuItems[3].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[3].classList.add("walletOn")
-        $("#sitecontainer").load("pages/wallet.html").hide().fadeIn(400);;
+        $("#sitecontainer").load("pages/wallet.html").hide().fadeIn(400);
         LeftMenuResetter(3)
     })
 }
@@ -74,7 +78,7 @@ function SettingButton() {
     leftMenuItems[4].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[4].classList.add("settingsOn")
-        $("#sitecontainer").load("pages/settings.html").hide().fadeIn(400);;
+        $("#sitecontainer").load("pages/settings.html").hide().fadeIn(400);
         LeftMenuResetter(4)
     })
 }
