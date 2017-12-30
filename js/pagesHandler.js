@@ -1,7 +1,7 @@
 /** defs **/
 var leftMenuItems = document.querySelectorAll(".leftMenuItem")
 
-function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE
+function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + preloads all the other pages and hides them
     window.addEventListener("load",function (){
         $("#sitecontainer").load("pages/settings.html").hide()
         $("#sitecontainer").load("pages/wallet.html").hide()
