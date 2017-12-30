@@ -80,3 +80,41 @@
 #rupee { background-image: url("../images/currencies/rupee.png") }
 #ruble { background-image: url("../images/currencies/ruble.png") }
 #shekel { background-image: url("../images/currencies/shekel.png") }
+
+
+/**** SETTINGS ICONS ****/
+
+#profileSettings {
+    background-image: url("../images/settingsIcons/profileSettings.png");
+}
+
+#notificationSettings {
+    background-image: url("../images/settingsIcons/notificationSettings.png");
+}
+
+#securitySettings {
+    background-image: url("../images/settingsIcons/securitySettings.png");
+}
+
+#paymentSettings {
+    background-image: url("../images/settingsIcons/paymentSettings.png");
+}
+
+#activitySettings {
+    background-image: url("../images/settingsIcons/activitySettings.png");
+}
+
+#interfaceSettings {
+    background-image: url("../images/settingsIcons/interfaceSettings.png");
+}
+
+#deleteSettings {
+    background-image: url("../images/settingsIcons/deleteSettings.png");
+}
+ 
+
+#profileSettings, #notificationSettings, #securitySettings, #paymentSettings, #activitySettings, #interfaceSettings, #deleteSettings {
+    background-size: 30px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}

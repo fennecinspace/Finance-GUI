@@ -1,56 +1,41 @@
 <div id="settingsContent">
-    <div class="col-1">
-        <div class ="settingsPageItem" id="profilePicture"></div>
-    </div>
-    <div class="col-2">
-        <form action="#">
-            <div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="firstName">First Name : </label>
-                    <input class ="settingsPageInput" id="firstName" type="text">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="lastName">Last Name : </label>
-                    <input class ="settingsPageInput" id="lastName" type="text">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="birthday">Birthday : </label>
-                    <input class ="settingsPageInput" id="birthday" type="date">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="emailAddr">Email : </label>
-                    <input class ="settingsPageInput" id="emailAddr" type="email">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="passWord">Password : </label>
-                    <input class ="settingsPageInput" id="passWord" type="password">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="phoneNumber">Phone : </label>
-                    <input class ="settingsPageInput" id="phoneNumber" type="tel">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="company">Company : </label>
-                    <input class ="settingsPageInput" id="company" type="text">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="homeAdresse">Address : </label>
-                    <input class ="settingsPageInput" id="homeAdresse" type="text">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="city">City : </label>
-                    <input class ="settingsPageInput" id="city" type="text">
-                </div>
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="zipCode">Zip Code : </label>
-                    <input class ="settingsPageInput" id="zipCode" type="text">
-                </div> 
-                <div class ="settingsPageItem clearfix">
-                    <label class ="settingsPageLabel" for="country">Country : </label>
-                    <input class ="settingsPageInput" id="country" type="text">
-                </div>             
-            </div>   
-            <input id="submitButton" value="Save" type="submit"></div>
-        </form>
+    <div>
+        <!-- Profile -->
+        <section class="settingsMenuSection">
+            <div id="profileSettings" class="settingsMenuItem">
+                <div class="settingsMenuItem_Title">My Profile</div>
+                <div class="settingsMenuItem_Description">Change your profile settings and personal information, name, age, address ...ect</div>
+            </div>
+            <div id="notificationSettings" class="settingsMenuItem last">
+                <div class="settingsMenuItem_Title">Notifications</div>
+                <div class="settingsMenuItem_Description">Manage your email and phone notifications</div>
+            </div>
+        </section>
+        <!-- security -->
+        <section class="settingsMenuSection">
+            <div id="securitySettings" class="settingsMenuItem">
+                <div class="settingsMenuItem_Title">Security</div>
+                <div class="settingsMenuItem_Description">Change password, email, and add two steps-authentification</div>
+            </div>
+            <div id="paymentSettings" class="settingsMenuItem">
+                <div class="settingsMenuItem_Title">Payment</div>
+                <div class="settingsMenuItem_Description">Add, modify or delete your credit/debit cards and bank accounts</div>
+            </div>
+            <div id="activitySettings" class="settingsMenuItem">
+                <div class="settingsMenuItem_Title">Activity Log</div>
+                <div class="settingsMenuItem_Description">Consult your trading history, what you bought and sold</div>
+            </div>
+            <div id="interfaceSettings" class="settingsMenuItem last">
+                <div class="settingsMenuItem_Title">User Interface</div>
+                <div class="settingsMenuItem_Description">Edit the interface or the theme, and change the display language</div>
+            </div>
+        </section>   
+        <!-- deletion -->
+        <section class="settingsMenuSection">
+            <div id="deleteSettings" class="settingsMenuItem last">
+                <div class="settingsMenuItem_Title">Delete Account</div>
+                <div class="settingsMenuItem_Description">Deactivate or delete account</div>
+            </div>
+        </section>   
     </div>
 </div>
