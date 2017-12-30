@@ -67,3 +67,34 @@ a, a:active, a:hover, a:visited {
 .activeElement {
     background-color: hsla(0, 0%, 53.3%, .2);
 }
+
+/**** PAGE LAYOUT ****/
+/* #region */
+.upper {
+    height: 78%;
+}
+
+.lower {
+    height: 22%;
+    /*background: rgb(112, 114, 108);*/
+}
+
+.col-1 {
+    width: 33.333%;
+    height: 100%;
+    /*background: rgb(236, 218, 218);*/
+    float: left;
+}
+
+.col-2 {
+    width: 66.6666%;
+    height: 100%;
+    /*background: #c2c2c2;*/
+    float: left;
+}
+
+.col-50 {
+    width: 50%;
+    height: 50%;
+}
+/* #endregion */

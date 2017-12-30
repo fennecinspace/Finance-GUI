@@ -118,3 +118,77 @@
     background-position: 10px 10px;
     background-repeat: no-repeat;
 }
+
+
+/***** DEPOSIT ICONS *****/
+
+#method1 {
+    background-image: url("../images/paymentIcons/1.png");
+}
+
+#method2 {
+    background-image: url("../images/paymentIcons/2.png");
+}
+
+#method3 {
+    background-image: url("../images/paymentIcons/3.png");
+}
+
+#method4 {
+    background-image: url("../images/paymentIcons/4.png");
+}
+
+#method5 {
+    background-image: url("../images/paymentIcons/5.png");
+}
+
+#method6 {
+    background-image: url("../images/paymentIcons/6.png");
+}
+
+#method7 {
+    background-image: url("../images/paymentIcons/7.png");
+}
+
+#method8 {
+    background-image: url("../images/paymentIcons/8.png");
+}
+
+#method9 {
+    background-image: url("../images/paymentIcons/9.png");
+}
+
+#method10 {
+    background-image: url("../images/paymentIcons/10.png");
+}
+
+#method11 {
+    background-image: url("../images/paymentIcons/11.png");
+}
+
+#method12 {
+    background-image: url("../images/paymentIcons/12.png");
+}
+
+#method13 {
+    background-image: url("../images/paymentIcons/13.png");
+}
+
+#method14 {
+    background-image: url("../images/paymentIcons/14.png");
+}
+
+#method15 {
+    background-image: url("../images/paymentIcons/15.png");
+}
+
+#method16 {
+    background-image: url("../images/paymentIcons/16.png");
+}
+
+#method1, #method2, #method3, #method4, #method5, #method6, #method7, #method8, #method9, 
+#method10, #method11, #method12, #method13, #method14, #method15, #method16 {
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: 32px 10px;
+} 

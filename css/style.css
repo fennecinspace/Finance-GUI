@@ -74,6 +74,12 @@
     margin: 18px 10px;
     padding-left: 10px;
     font-size: 1em;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#search:focus-within {
+    box-shadow: rgba(255, 0, 0, 0.178)  0px 0px 3px 2px;
+    border : 1px solid rgb(255, 0, 0, 0.5);
 }
 
 #searchbtn {
@@ -95,6 +101,14 @@
     width: 400px;
     height: 30px;
     border: none;
+}
+
+#search:focus-within #searchbtn {
+    border-left : 1px solid rgb(189, 0, 0, 0.5);
+}
+
+#search:focus-within #searchbtn:hover {
+    background-color: rgba(189,0, 0, 0.2);
 }
 
 #logo {
@@ -197,16 +211,24 @@
 }
 
 #newsContent {
-    width : 100%;
-    height: 100%;
+    width : 1020px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.4em;
     padding-top: 10px; 
+    margin: 0 auto;
+}
+
+#walletContent {
+    min-width: 700px;
+    max-width: 700px;
+    padding: 10px 50px;
+    height: 100%;
+    margin: 0 auto;
 }
 /* #endregion */
 
-/***** NEWS *****/
+/**** NEWS ****/
 /* #region */
 .newsCard {
     position: relative;
@@ -216,6 +238,7 @@
     float: left;
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
+    border-radius: 5px;
     transition: box-shadow 0.3s;
     overflow: hidden;
 }
@@ -348,14 +371,129 @@
 }
 /* #endregion */
 
+/**** WALLET ****/
+/* #region */
+#walletInfo {
+    padding-right: 10px; 
+    width: 33.3333%;
+}
 
-/***** SETTINGS *****/
+#walletStats{
+    width: 66.6666%;
+}
 
+#walletInfo, #walletStats {
+    height: 200px;
+    float:left;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
+}
+
+#walletInfo > div {
+    padding-top: 45px;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    cursor: context-menu;
+}
+
+#balance {
+    font-weight: 700;
+    line-height: 80px;
+    font-size : 31px;
+    color: #000f;
+}
+
+#walletInfo > div, #walletStats > div {
+    height: 200px;
+    border: 1px solid rgba(12, 12, 12, 0.925);
+    border-radius: 5px;
+}
+
+#walletStats_chart {
+    width: 100%;
+    height: 100%;
+}
+
+#walletDeposit {
+    clear: both;
+    width: 100%;
+    border: 1px solid rgba(12, 12, 12, 0.925);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
+}
+
+#depositInput {
+    background: url("../images/paymentIcons/walletDeposit.png") no-repeat;
+    background-size: 40px;
+    background-position: 5px 5px;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.925);
+    text-align: left;
+    line-height: 50px;
+    padding-left: 50px;
+}
+
+#depositInput > span {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 700;
+    top: 0px;
+    right : 30px;
+    color: rgb(0, 0, 0);
+}
+
+
+#inputAmount {
+    position: absolute;
+    top: 10px;
+    right : 20px;
+    height: 30px;
+    border: 1px solid rgba(12, 12, 12, 0.925);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 30px 0 10px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#inputAmount:focus {
+    box-shadow: rgba(255, 0, 0, 0.178)  0px 0px 3px 2px;
+    border : 1px solid rgb(255, 0, 0, 0.5);
+}
+
+.row {
+    border-bottom: 1px solid rgba(104, 104, 104, 0.616);
+}
+
+.depositMethod {
+    float:left;
+    height: 100px;
+    width: 25%;
+    border-right: 1px solid rgba(104, 104, 104, 0.616);
+    transition: background-color 0.7s;
+    cursor: pointer;
+    line-height: 150px;
+    font-size: 12px;
+}
+
+.depositMethod:hover {
+    background-color: rgba(135, 135, 135, 0.322);
+}
+/* #endregion */
+
+/**** SETTINGS ****/
+/* #region */
 .settingsMenuSection {
     border-radius: 5px;
     border: 1px solid rgba(12, 12, 12, 0.925);
     text-align: left;
     margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
 }
 
 .settingsMenuItem {
@@ -381,7 +519,7 @@
     color: rgba(110, 110, 110, 0.5);
     font-weight: 700;
 }
-
+/* #endregion */
 
 /**** LOUGOUT ****/
 /* #region */ 
@@ -404,32 +542,7 @@
 }
 /* #endregion */
 
-/**** PAGE LAYOUT ****/
-/* #region */
-.upper {
-    height: 78%;
-}
-
-.lower {
-    height: 22%;
-    /*background: rgb(112, 114, 108);*/
-}
-
-.col-1 {
-    width: 33.333%;
-    height: 100%;
-    /*background: rgb(236, 218, 218);*/
-    float: left;
-}
-
-.col-2 {
-    width: 66.6666%;
-    height: 100%;
-    /*background: #c2c2c2;*/
-    float: left;
-}
-
+/**** ADDED ****/
 .last {
-    border-bottom: none;
+    border: none;
 }
-/* #endregion */
