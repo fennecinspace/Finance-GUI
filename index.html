@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/ratesCharts.css">
     <title>Terminal</title>
 </head>
 <body>
@@ -23,10 +24,12 @@
                 <input id="searchtxt" type="text" placeholder="Search"><div id="searchbtn" class="floatRight"></div>
             </div>
             <div id="user" class="floatRight"></div>
-            <input id="notify" class="floatRight notifyOff" type="submit" value="">
+            <div id="notify" class="floatRight notifyOff" type="submit" value=""><div>3</div></div>
             <div id ="notifyBox" class="hide">
                 <div>
-                    <div></div><div></div><div></div>
+                    <div id="notification1">Your buy order has been Approved</div>
+                    <div id="notification2">You sold 10,000$ for 7399.20£</div>
+                    <div id="notification3">Enable Two-Step Autentification</div>
                 </div>
             </div> <!-- this is the notification window -->
         </nav>
@@ -35,7 +38,7 @@
         <div id="leftmenu">
             <div>
                 <a class="leftMenuItem homeOn">Home</a>
-                <a class="leftMenuItem profileOff">Portfolio</a>
+                <a class="leftMenuItem ratesOff">Rates</a>
                 <a class="leftMenuItem newsOff">News</a>
                 <a class="leftMenuItem walletOff">Wallet</a>
                 <a class="leftMenuItem settingsOff">Settings</a>

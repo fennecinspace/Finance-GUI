@@ -57,6 +57,7 @@ a, a:active, a:hover, a:visited {
 
 .hide {
     display: none;
+    opacity: 0;
 }
 
 .spacefiller {

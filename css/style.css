@@ -26,6 +26,7 @@
 }
 
 #notify {
+    position: relative;
     width: 40px;
     height : 40px;
     background-size: 25px;
@@ -39,19 +40,35 @@
     transition: background-color 0.5s;
 }
 
+#notify > div {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    color : rgb(255, 255, 255);
+    background-color: rgb(255,0,0);
+    border-radius: 50%;
+}
 
 #notifyBox {
+    display: block;
     position: fixed;
     top: 60px;
     right: 65px;
     z-index: 4;
     width: 200px;
-    height: 270px;
+    height: 200px;
     background: white;
     box-shadow: rgba(17, 17, 17, 0.178)  0px 0px 5px 2px;
+    transition: opacity 0.3s;
 }
 
 #notifyBox > div { /* container des notification*/
+    position: relative;
     margin: 20px 0px;
 }
 
@@ -59,10 +76,16 @@
     width : 100%;
     height: 60px;
     text-align: center;
-    line-height: 60px;
+    font-size: 14px;
+    text-align: left;
+    padding: 12px 0 0 50px;
+    background-size: 36px;
+    background-position: 10px 10px ;
+    background-repeat: no-repeat;
+    border-top: 1px solid hsla(0, 0%, 53.3%, .35);
 }
 
-#notifyBox > div div:hover {
+#notifyBox > div > div:hover {
     background-color: hsla(0, 0%, 53.3%, .2);
     cursor: pointer;
 }
@@ -217,6 +240,7 @@
     line-height: 1.4em;
     padding-top: 10px; 
     margin: 0 auto;
+    overflow-y: hidden;
 }
 
 #walletContent {
@@ -226,6 +250,62 @@
     height: 100%;
     margin: 0 auto;
 }
+
+#ratesContent {
+    min-width: 460px;
+    max-width: 460px;
+    padding: 10px 50px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* #endregion */
+
+/**** RATES ****/
+/* #region */
+.ratesChart, .ratesQuotes {
+    border: 1px solid rgba(12, 12, 12, 0.925);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
+    border-radius: 5px;
+    width : 360px;
+    margin-bottom: 10px;
+}
+
+.ratesChart {
+    height: 146px;
+}
+
+
+table, tbody, tr {
+    width: 360px;
+    border-collapse : collapse;
+}
+
+.tableHead, .tableRow {    
+    height: 30px;
+    border-bottom: 1px solid rgba(138, 133, 133, 0.5);
+}
+
+.tableHead > th {
+    color : rgb(255, 0, 0);
+}
+
+td:first-child, .tableHead > th {
+    font-weight: 700;
+}
+
+.tableRow {
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.tableRow:hover {
+    background-color: hsla(0, 0%, 53.3%, 0.2);
+}
+
+.activeTableRow {
+    background-color: hsla(0, 0%, 53.3%, 0.2);
+}
+
 /* #endregion */
 
 /**** NEWS ****/

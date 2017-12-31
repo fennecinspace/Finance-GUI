@@ -6,7 +6,7 @@ function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + p
         $("#sitecontainer").load("pages/settings.html").hide()
         $("#sitecontainer").load("pages/wallet.html").hide()
         $("#sitecontainer").load("pages/news.html").hide()
-        $("#sitecontainer").load("pages/portfolio.html").hide()
+        $("#sitecontainer").load("pages/rates.html").hide()
         $("#sitecontainer").load("pages/home.html")
     },false)
 }
@@ -17,8 +17,8 @@ function LeftMenuResetter(n){ // resets all buttons when a button is clicked
         leftMenuItems[0].classList.remove("homeOn")
     }
     if (n !== 1) {
-        leftMenuItems[1].classList.add("profileOff")
-        leftMenuItems[1].classList.remove("profileOn")
+        leftMenuItems[1].classList.add("ratesOff")
+        leftMenuItems[1].classList.remove("ratesOn")
     }
     if (n !== 2) {
         leftMenuItems[2].classList.add("newsOff")
@@ -47,11 +47,11 @@ function HomeButton() {
     })
 }
 
-function PortfolioButton() {
+function RatesButton() {
     leftMenuItems[1].addEventListener('click',function (e){
         e.stopPropagation();
-        leftMenuItems[1].classList.add("profileOn")
-        $("#sitecontainer").load("pages/portfolio.html").hide().fadeIn(400);
+        leftMenuItems[1].classList.add("ratesOn")
+        $("#sitecontainer").load("pages/rates.html").hide().fadeIn(400);
         LeftMenuResetter(1)
     })
 }
@@ -93,7 +93,7 @@ function LogoutButton() {
 
 function LeftMenuHandler (){
     HomeButton();
-    PortfolioButton();
+    RatesButton();
     NewsButton();
     WalletButton();
     SettingButton();

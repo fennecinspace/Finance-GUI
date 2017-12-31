@@ -7,13 +7,13 @@
     background: url("../images/icons/homeOn.png") no-repeat;
 }
 
-/* PORTFOLIO */
-.profileOff {
-    background: url("../images/icons/profileOff.png") no-repeat;
+/* RATES */
+.ratesOff {
+    background: url("../images/icons/ratesOff.png") no-repeat;
 }
 
-.profileOn {
-    background: url("../images/icons/profileOn.png") no-repeat;
+.ratesOn {
+    background: url("../images/icons/ratesOn.png") no-repeat;
 }
 
 /* LOG OUT */
@@ -62,8 +62,21 @@
     background: url("../images/icons/alarmOn.png") no-repeat;
 }
 
-.notifyOn, .settingsOn, .walletOn, .newsOn, .logoutOn, .profileOn ,.homeOn {
+.notifyOn, .settingsOn, .walletOn, .newsOn, .logoutOn, .ratesOn ,.homeOn {
     background-color: hsla(0, 0%, 53.3%, .2);
+}
+
+/**** NOTIFICATIONS ****/
+#notification1 {
+    background-image: url("../images/icons/notification1.png");
+}
+
+#notification2 {
+    background-image: url("../images/icons/notification2.png");
+}
+
+#notification3 {
+    background-image: url("../images/icons/notification3.png");
 }
 
 
