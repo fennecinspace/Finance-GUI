@@ -220,9 +220,16 @@
 /**** CONTENT CONTAINERS ****/
 /* #region */
 #homeContent {
+    width: 1000px;
+    height: 750px;
+    margin : 0 auto;
+}
+
+#homeContent > div {
+    padding: 10px;
+    margin: 20px 60px 20px auto;
     height: 100%;
-    margin-right: 60px;
-    min-height: 586px;
+    border: 1px solid rgb(131, 131, 131);
 }
 
 #settingsContent{
@@ -258,6 +265,45 @@
     height: 100%;
     margin: 0 auto;
 }
+/* #endregion */
+
+/**** HOME ****/
+/* #region */
+.upper {
+    height: 70%;
+}
+
+.lower {
+    height: 30%;;
+}
+
+.homeMainGraph, .buyAndSell_Section {
+    height: 50%;
+}
+
+.homeMainGraph > div {
+    width: 100%;
+    height: 100%;
+}
+
+.homeStats_25 {
+    display: inline-block;
+    height: 100%;
+    width: 24.50%;
+}
+
+.homeStats_50 {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+.homeStats_25 > div , .homeStats_50 > div {
+    height: 100%;
+    widows: 100%;
+    padding: 10px;
+}
+
 /* #endregion */
 
 /**** RATES ****/

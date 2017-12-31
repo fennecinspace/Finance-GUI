@@ -71,15 +71,6 @@ a, a:active, a:hover, a:visited {
 
 /**** PAGE LAYOUT ****/
 /* #region */
-.upper {
-    height: 78%;
-}
-
-.lower {
-    height: 22%;
-    /*background: rgb(112, 114, 108);*/
-}
-
 .col-1 {
     width: 33.333%;
     height: 100%;
