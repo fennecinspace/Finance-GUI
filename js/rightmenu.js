@@ -10,11 +10,7 @@ function CurrencyResetter(n){ // resets all buttons when a button is clicked
 function CurrencyLoader(){
     for (let i = 0; i < currencies.length; i++)
             currencies[i].addEventListener('click', function(e){
-                let newCharts = 
-                    $.get("pages/home.html").then( page => {
-                        $("#homeContent").html($(page).find("#homeContent").html())
-                    })
-                $("#homeContent").load("newCharts")
+                $("#sitecontainer").load("pages/home.html").hide().fadeIn(800);
                 this.classList.add("activeElement")
                 if (!$("#notifyBox")[0].classList.contains("hide")) {
                     $("#notify")[0].classList.add("notifyOff")

@@ -304,6 +304,102 @@
     padding: 10px;
 }
 
+.buyAndSell_Section {
+    padding: 2% 0 2% 5%;
+}
+
+.buyAndSell_title {
+    text-align: left;
+    font-weight: 700;
+    color: rgb(255,0,0,1);
+    padding: 0 0 1.5% 3%;
+    border-bottom: 1px solid rgba(238, 0, 0, 0.625);
+}
+
+.buyAndSell_table, .buyAndSell_table table {
+    width : 100%;
+    height : 95%;
+    border-collapse: collapse;
+}
+
+.buyAndSell_tableHead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.925);
+    height: 10%;
+    width: 100%;
+}
+
+.buyAndSell_tableHead > th {
+    padding: 1% 0;
+    font-weight: 700;
+}
+
+
+.buyAndSell_tableRow {
+    border-bottom: 1px solid rgba(231, 219, 222, 0.925);
+    height: 10%;
+    width: 100%;
+
+}
+
+.buyAndSell_container {
+    padding: 2% 0;
+    text-align: left;
+    height: 90%;
+}
+
+.buyAndSell_containerElement {
+    padding: 2%;
+    height: 15%;
+    position: relative;
+}
+
+.buyAndSell_container label {
+    position: absolute;
+    top: 25%;
+}
+
+.buyAndSell_container #buyAndSell_comment, .buyAndSell_container #buyAndSell_amount, .buyAndSell_container #buyAndSell_symboles {
+    font : 16px;
+    width: 60%;
+    height: 25px;
+    position: absolute;
+    top: 20%;
+    right: 1%;
+}
+
+.buyAndSell_Buttons {
+    height: 45%;
+    text-align: center;
+}
+
+.buyAndSell_Buttons > span {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    padding-top: 5%;
+}
+
+#buyAndSell_buy, #buyAndSell_sell {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    cursor: pointer;
+}
+
+#buyAndSell_buy:active, #buyAndSell_sell:active {
+    filter: contrast(2);
+}
+
+.buyAndSell_Buttons > span:first-child {
+    border-right: 1px solid rgba(231, 219, 222, 0.925);
+}
+
+
+
 /* #endregion */
 
 /**** RATES ****/
@@ -321,7 +417,7 @@
 }
 
 
-table, tbody, tr {
+.ratesQuotes table, .ratesQuotes tbody, .ratesQuotes tr {
     width: 360px;
     border-collapse : collapse;
 }
@@ -335,7 +431,7 @@ table, tbody, tr {
     color : rgb(255, 0, 0);
 }
 
-td:first-child, .tableHead > th {
+.ratesQuotes td:first-child, .ratesQuotes .tableHead > th {
     font-weight: 700;
 }
 

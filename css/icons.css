@@ -53,6 +53,16 @@
     
 }
 
+/***** BUY AND SELL *****/
+
+#buyAndSell_buy {
+    background-image: url('../images/icons/buy.png');
+}
+
+#buyAndSell_sell {
+    background-image: url('../images/icons/sell.png');
+}
+
 /* NOTIFICATIONS*/
 .notifyOff {
     background: url("../images/icons/alarmOff.png") no-repeat;
@@ -62,11 +72,6 @@
     background: url("../images/icons/alarmOn.png") no-repeat;
 }
 
-.notifyOn, .settingsOn, .walletOn, .newsOn, .logoutOn, .ratesOn ,.homeOn {
-    background-color: hsla(0, 0%, 53.3%, .2);
-}
-
-/**** NOTIFICATIONS ****/
 #notification1 {
     background-image: url("../images/icons/notification1.png");
 }
@@ -79,6 +84,9 @@
     background-image: url("../images/icons/notification3.png");
 }
 
+.notifyOn, .settingsOn, .walletOn, .newsOn, .logoutOn, .ratesOn ,.homeOn {
+    background-color: hsla(0, 0%, 53.3%, .2);
+}
 
 /**** CURRENCIES ****/
 

@@ -3,8 +3,8 @@ var leftMenuItems = document.querySelectorAll(".leftMenuItem")
 
 function loadingHandler() { // this will make the content ivisible when ajax is running for better look
     $(document).on({
-        ajaxStart: function() { $("#sitecontainer").addClass("loading");console.log("started")},
-        ajaxStop: function() {$("#sitecontainer").removeClass("loading");console.log("finished")}    
+        ajaxStart: function() { $("#sitecontainer").addClass("loading");},
+        ajaxStop: function() {$("#sitecontainer").removeClass("loading");}    
     });
 }
 
@@ -22,7 +22,7 @@ function LeftMenuResetter(n){ // resets all buttons when a button is clicked
     }
     if (n !== 1) {
         leftMenuItems[1].classList.add("ratesOff")
-        leftMenuItems[1].classList.remove("ratesOn")
+        leftMenuItems[1].classList.remove("ratesOn")   
     }
     if (n !== 2) {
         leftMenuItems[2].classList.add("newsOff")
@@ -47,6 +47,7 @@ function HomeButton() {
         e.stopPropagation();
         leftMenuItems[0].classList.add("homeOn")
         $("#sitecontainer").load("pages/home.html").hide().fadeIn(400);
+        $("#rightmenu").removeClass("hide");
         LeftMenuResetter(0)
     })
 }
@@ -56,6 +57,7 @@ function RatesButton() {
         e.stopPropagation();
         leftMenuItems[1].classList.add("ratesOn")
         $("#sitecontainer").load("pages/rates.html").hide().fadeIn(400);
+        $("#rightmenu").addClass("hide");
         LeftMenuResetter(1)
     })
 }
@@ -65,6 +67,7 @@ function NewsButton() {
         e.stopPropagation();
         leftMenuItems[2].classList.add("newsOn")
         $("#sitecontainer").load("pages/news.html").hide().fadeIn(400);
+        $("#rightmenu").addClass("hide");
         LeftMenuResetter(2)
     })
 }
@@ -74,6 +77,7 @@ function WalletButton() {
         e.stopPropagation();
         leftMenuItems[3].classList.add("walletOn")
         $("#sitecontainer").load("pages/wallet.html").hide().fadeIn(400);
+        $("#rightmenu").addClass("hide");
         LeftMenuResetter(3)
     })
 }
@@ -83,6 +87,7 @@ function SettingButton() {
         e.stopPropagation();
         leftMenuItems[4].classList.add("settingsOn")
         $("#sitecontainer").load("pages/settings.html").hide().fadeIn(400);
+        $("#rightmenu").addClass("hide");
         LeftMenuResetter(4)
     })
 }
