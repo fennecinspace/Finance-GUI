@@ -11,7 +11,7 @@ function loadingHandler() { // this will make the content ivisible when ajax is 
 function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + preloads all the other pages and hides them
     window.addEventListener("load", e => {
         e.stopPropagation();
-        $("#sitecontainer").load("../pages/home.html");
+        $("#sitecontainer").load("pages/home.html");
     },false)
 }
 
@@ -46,7 +46,7 @@ function HomeButton() {
     leftMenuItems[0].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[0].classList.add("homeOn")
-        $("#sitecontainer").load("../pages/home.html").hide().fadeIn(400);
+        $("#sitecontainer").load("pages/home.html").hide().fadeIn(400);
         LeftMenuResetter(0)
     })
 }
@@ -55,7 +55,7 @@ function RatesButton() {
     leftMenuItems[1].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[1].classList.add("ratesOn")
-        $("#sitecontainer").load("../pages/rates.html").hide().fadeIn(400);
+        $("#sitecontainer").load("pages/rates.html").hide().fadeIn(400);
         LeftMenuResetter(1)
     })
 }
@@ -64,7 +64,7 @@ function NewsButton() {
     leftMenuItems[2].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[2].classList.add("newsOn")
-        $("#sitecontainer").load("../pages/news.html").hide().fadeIn(400);
+        $("#sitecontainer").load("pages/news.html").hide().fadeIn(400);
         LeftMenuResetter(2)
     })
 }
@@ -73,7 +73,7 @@ function WalletButton() {
     leftMenuItems[3].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[3].classList.add("walletOn")
-        $("#sitecontainer").load("../pages/wallet.html").hide().fadeIn(400);
+        $("#sitecontainer").load("pages/wallet.html").hide().fadeIn(400);
         LeftMenuResetter(3)
     })
 }
@@ -82,7 +82,7 @@ function SettingButton() {
     leftMenuItems[4].addEventListener('click',function (e){
         e.stopPropagation();
         leftMenuItems[4].classList.add("settingsOn")
-        $("#sitecontainer").load("../pages/settings.html").hide().fadeIn(400);
+        $("#sitecontainer").load("pages/settings.html").hide().fadeIn(400);
         LeftMenuResetter(4)
     })
 }

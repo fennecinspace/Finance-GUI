@@ -11,7 +11,7 @@ function CurrencyLoader(){
     for (let i = 0; i < currencies.length; i++)
             currencies[i].addEventListener('click', function(e){
                 let newCharts = 
-                    $.get("../pages/home.html").then( page => {
+                    $.get("pages/home.html").then( page => {
                         $("#homeContent").html($(page).find("#homeContent").html())
                     })
                 $("#homeContent").load("newCharts")
