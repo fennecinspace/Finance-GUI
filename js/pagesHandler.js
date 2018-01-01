@@ -4,12 +4,7 @@ var leftMenuItems = document.querySelectorAll(".leftMenuItem")
 function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + preloads all the other pages and hides them
     window.addEventListener("load", e => {
         e.stopPropagation();
-        $("#sitecontainer").load("pages/settings.html").hide()
-        $("#sitecontainer").load("pages/wallet.html").hide()
-        $("#sitecontainer").load("pages/news.html").hide()
-        $("#sitecontainer").load("pages/rates.html").hide()
         $("#sitecontainer").load("pages/home.html").hide().fadeIn(800);
-        $("#sitecontainer")[0].removeAttribute("style")
     },false)
 }
 
