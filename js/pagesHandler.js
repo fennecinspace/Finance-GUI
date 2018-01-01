@@ -4,7 +4,15 @@ var leftMenuItems = document.querySelectorAll(".leftMenuItem")
 function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + preloads all the other pages and hides them
     window.addEventListener("load", e => {
         e.stopPropagation();
-        $("#sitecontainer").load("pages/home.html").hide().fadeIn(800);
+
+        $("#sitecontainer").hide();
+        $("#sitecontainer").load("pages/settings.html");
+        $("#sitecontainer").load("pages/wallet.html");
+        $("#sitecontainer").load("pages/news.html");
+        $("#sitecontainer").load("pages/rates.html");
+        $("#sitecontainer").load("pages/home.html", ()=> {
+            $("#sitecontainer").show('fast');
+        });
     },false)
 }
 
@@ -99,9 +107,5 @@ function LeftMenuHandler (){
 
 /** function callings **/
 
-$(document).ready(() => {
-    firstLoad ()
-    LeftMenuHandler();
-} )
-
-
+firstLoad ()
+LeftMenuHandler();
