@@ -9,6 +9,7 @@ function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + p
         $("#sitecontainer").load("pages/news.html").hide()
         $("#sitecontainer").load("pages/rates.html").hide()
         $("#sitecontainer").load("pages/home.html").hide().fadeIn(800);
+        $("#sitecontainer")[0].removeAttribute("style")
     },false)
 }
 
