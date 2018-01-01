@@ -11,7 +11,7 @@ function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + p
         $("#sitecontainer").load("pages/news.html");
         $("#sitecontainer").load("pages/rates.html");
         $("#sitecontainer").load("pages/home.html", ()=> {
-            $("#sitecontainer").show('fast');
+            $("#sitecontainer").show(800);
         });
     },false)
 }
