@@ -672,3 +672,7 @@ td:first-child, .tableHead > th {
 .last {
     border: none;
 }
+
+.loading {
+    visibility: hidden;
+}

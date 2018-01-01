@@ -15,7 +15,7 @@ var walletChart = new Chart(ctx, {
     options: {
         title: {
             display: true,
-            text: 'Wallet Balance changes from 2011 till today'
+            text: 'Wallet Balance changes from 2011 until today'
         },
         legend: {
             display: false
