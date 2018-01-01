@@ -63,6 +63,14 @@
     background-image: url('../images/icons/sell.png');
 }
 
+.BuyAndSell {
+    background-image: url('../images/icons/buyandsell.png');
+}
+
+.Orders {
+    background-image: url('../images/icons/orders.png');
+}
+
 /* NOTIFICATIONS*/
 .notifyOff {
     background: url("../images/icons/alarmOff.png") no-repeat;

@@ -229,7 +229,9 @@
     padding: 10px;
     margin: 20px 60px 20px auto;
     height: 100%;
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 2px;
 }
 
 #settingsContent{
@@ -312,9 +314,16 @@
     text-align: left;
     font-weight: 700;
     color: rgb(255,0,0,1);
-    padding: 0 0 1.5% 3%;
+    padding: 0 0 1.5% 30px;
     border-bottom: 1px solid rgba(238, 0, 0, 0.625);
 }
+
+.BuyAndSell, .Orders {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px 0px;
+}
+
 
 .buyAndSell_table, .buyAndSell_table table {
     width : 100%;
@@ -397,9 +406,6 @@
 .buyAndSell_Buttons > span:first-child {
     border-right: 1px solid rgba(231, 219, 222, 0.925);
 }
-
-
-
 /* #endregion */
 
 /**** RATES ****/
