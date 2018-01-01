@@ -11,10 +11,16 @@ function Chart1() {
         data: {
           labels: [,,,,,,,,,,],
           datasets: [{ 
-              data: [103040,240368,168764,500346,1034975,704975,930500,1423064,1423064,1423064],
+              data: [100000,200000,300000,400000,50000,100000,700000,505000,805000,900000],
               label: "North America",
               borderColor: "#17A598",
               fill: false
+            },
+            { 
+                data: [200000,300000,100500,300000,60000,300000,500000,900000,650000,700000],
+                label: "North America",
+                borderColor: "#17A598",
+                fill: false
             }
           ]
         },
@@ -34,7 +40,7 @@ function Chart1() {
             },
             elements: {
                 line: {
-                    tension: 0
+                    tension: 0.4
                 }
             },
             responsive : true,
@@ -45,16 +51,22 @@ function Chart1() {
 
 function Chart2() {
     var chart = new Chart(chartCanvas2, {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: [,,,,,,,,,,],
           datasets: [{ 
-              data: [103040,240368,168764,500346,1034975,704975,930500,1423064,1423064,1423064],
-              label: "North America",
-              borderColor: "#17A598",
-              fill: false
-            }
-          ]
+            data: [100000,200000,300000,400000,50000,100000,700000,505000,805000,900000],
+            label: "North America",
+            borderColor: "#17A598",
+            fill: false
+          },
+          { 
+            data: [200000,300000,100500,300000,60000,300000,500000,900000,650000,700000],
+            label: "North America",
+            borderColor: "#17A598",
+            fill: false
+          }
+        ]
         },
         options: {
             title: {
@@ -83,7 +95,7 @@ function Chart2() {
 
 function Chart3() {
     var chart = new Chart(secondCanvas1, {
-        type: 'line',
+        type: 'doughnut',
         data: {
           labels: [,,,,,,,,,,],
           datasets: [{ 
@@ -121,7 +133,7 @@ function Chart3() {
 
 function Chart4() {
     var chart = new Chart(secondCanvas2, {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: [,,,,,,,,,,],
           datasets: [{ 
@@ -195,8 +207,8 @@ function Chart5() {
     });
 }
 
-Chart1()
-Chart2()
-Chart3()
-Chart4()
-Chart5()
+Chart1();
+Chart2();
+Chart3();
+Chart4();
+Chart5();

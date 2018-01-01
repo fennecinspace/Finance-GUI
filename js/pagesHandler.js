@@ -8,7 +8,7 @@ function firstLoad () { //LOADS HOME THE FIRST TIME THE USER ENTERS THE SITE + p
         $("#sitecontainer").load("pages/wallet.html").hide()
         $("#sitecontainer").load("pages/news.html").hide()
         $("#sitecontainer").load("pages/rates.html").hide()
-        $("#sitecontainer").load("pages/home.html").hide().fadeIn(1500);
+        $("#sitecontainer").load("pages/home.html").hide().fadeIn(800);
     },false)
 }
 
