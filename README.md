@@ -1,5 +1,5 @@
 # financeWebAppInterface
-Non Functional Web App ... for a college project
+Non Functional Web App (Design)
 
 ### intro
 this is for "IHM" module L3 ..
@@ -13,5 +13,5 @@ my choice was "Finance"
 * Chart.js
 
 ## Report
-this will be added after finishing development 
+in French, included with the project files ...
 
