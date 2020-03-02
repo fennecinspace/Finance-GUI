@@ -1,17 +1,17 @@
 # financeWebAppInterface
+
 Non Functional Web App (Design)
 
-<p align="center">
-<img src="./images/preview.png">
-</p>
+<img align="center" src="./images/preview.png">
 
+Github Pages : https://logxseven.github.io/Finance-GUI/
 
-### intro
+## intro
 this is for "IHM" module L3 ..
 the goal is to make an intuitive interface for a software in a certain domain
 my choice was "Finance"
 
-### TechUsed
+## TechUsed
 * HTML/CSS
 * JS
 * JQuery
