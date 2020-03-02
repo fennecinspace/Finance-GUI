@@ -1,4 +1,4 @@
-# financeWebAppInterface
+# Finance-GUI for IHM module
 
 Non Functional Web App (Design)
 
